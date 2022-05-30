@@ -93,9 +93,9 @@ private class ZippexTests
                 ParentId = l.Id);
             insert att;
             
-            Test.StartTest();
+            System.Test.StartTest();
             Zippex.unzipAttachment(att.Id, null, null, true);
-            Test.stopTest();
+            System.Test.stopTest();
             
             Attachment[] atts = [SELECT Id FROM Attachment];
             
